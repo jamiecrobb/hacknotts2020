@@ -80,9 +80,6 @@ input, select {
 input[type=text],
 input[type=number],
 select {
-input[type=password]:focus,
-input[type=text]:focus,
-input[type=email]:focus {
     outline: none;
 }
 
