@@ -77,7 +77,8 @@ input[type=submit] {
 
 
 input[type=password],
-input[type=text] {
+input[type=text],
+input[type=email] {
     border: none;
     padding: 1vh;
     background: lightgray;
