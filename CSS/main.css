@@ -11,6 +11,7 @@ body {
     background: rgb(116, 0, 184);
     background: linear-gradient(90deg, rgba(116, 0, 184, 1) 0%, rgba(94, 96, 206, 1) 100%);
     overflow: hidden;
+
 }
 
 .circle {
