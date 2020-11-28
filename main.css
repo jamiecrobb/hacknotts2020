@@ -15,17 +15,17 @@ nav {
 
 h1 {
     margin-right: auto;
-    margin-left: 50px;
+    margin-left: 5vh;
 }
 
 .links {
-    margin-right: 50px;
+    margin-right: 5vh;
 }
 
 .links a {
     text-decoration: none;
     color: black;
-    padding-left: 20px;
+    padding-left: 2vh;
 }
 
 body {
@@ -58,6 +58,13 @@ body {
     grid-row-end: 3;
 }
 
+.linegraph {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 form label {
     font-weight: 700;
     font-size: 1.2em;
@@ -82,7 +89,6 @@ button {
     background: rgb(78, 168, 222);
     background: linear-gradient(90deg, rgba(78, 168, 222, 1) 0%, rgba(86, 207, 225, 1) 100%);
     padding: 10px 28px;
-    font-size: 16px;
     cursor: pointer;
     text-align: center;
     color: white;
@@ -91,6 +97,48 @@ button {
     font-size: 1.2em;
   }
 
-  .formsection {
+.formsection {
       padding: 3px;
-  }
+}
+
+@media (max-width: 414px) {
+    * {
+        overflow-y: auto;
+    }
+    
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .linegraph {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    h1 {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 1vh;
+        margin-top: 2vh;
+        font-size: 2em;
+    }
+
+    .links {
+        margin-right: 0;
+        margin-bottom: 1vh;
+    }
+
+    .nav-links.home {
+        padding-left: 0;
+    }
+}
