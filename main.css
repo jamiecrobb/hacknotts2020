@@ -64,17 +64,23 @@ form label {
 }
 
 input, select {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 7px;
     padding: 5px 7px;
     font-size: 1.1em;
 }
 
+input[type=text],
+input[type=number],
+select {
+    outline: none;
+}
+
 button {
     width: 80%;
     border: none;
-    background-image: linear-gradient(to right, #4ea8de , #56cfe1);
+    background: rgb(78, 168, 222);
+    background: linear-gradient(90deg, rgba(78, 168, 222, 1) 0%, rgba(86, 207, 225, 1) 100%);
     padding: 10px 28px;
     font-size: 16px;
     cursor: pointer;
@@ -83,4 +89,8 @@ button {
     font-weight: 700;
     border-radius: 7px;
     font-size: 1.2em;
+  }
+
+  .formsection {
+      padding: 3px;
   }
